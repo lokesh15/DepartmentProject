@@ -1,0 +1,61 @@
+<div align="center" class="i1" *ngIf="this.services.issignin == false" >
+	<img class="img"  src="./assets/logo.jpg">
+</div>
+<div class="fit"  >
+	<form [formGroup]="logIn" >	
+		<div align="center">
+			<div class="style">
+				<div class="n1" >
+					<div class="logLogo">
+						<h1 align="left" >User Sign-In</h1>
+					</div>
+
+					<table align="center" style="width:90%">
+						<tr>
+							<td colspan="2" align="left">
+								<label class="c1">Username</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" class="style1"  [(ngModel)]="username"  formControlName="username">
+								<small *ngIf="logIn.get('username').invalid && logIn.get('username').touched">Enter valid Email</small>
+			                    <small *ngIf="logIn.get('username').errors && logIn.get('username').errors.required">Email is Required </small> 
+		                     	<small *ngIf="logIn.get('username').errors && logIn.get('username').errors.emailStandardValidator"> Enter the valid Email Adress</small> 
+
+							</td>
+						</tr>
+						<tr>
+							<td align="left" >
+								<label class="c1">Password</label><br>
+							</td>
+							<td align="right" >
+							    <label><a href="/">Forgot Password?</a></label><br>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="password" class="style1" [(ngModel)]="password" formControlName="password">
+								<small *ngIf="logIn.get('password').invalid && logIn.get('password').touched">Enter valid Password </small> 
+								<small *ngIf="logIn.get('password').errors && logIn.get('password').errors.required">Password is required</small> 
+								<small *ngIf="logIn.get('password').errors && logIn.get('password').errors.pattern">Enter valid Password with maximum value of 8</small> 
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button class="style2" (click)="loginValid()" type="submit">logIn</button>								
+							</td>
+						</tr>
+					</table>
+					
+						
+				</div>
+			</div>
+				<!-- <p class="style3">
+					New to this app?
+					<a >Sign up.</a>
+				</p> -->
+		</div>
+	</form> 
+</div>
+

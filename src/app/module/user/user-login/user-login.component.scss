@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;	font-size: 14px;
+	display:block;
+
+}
+
+a{
+  text-decoration: none;
+  color: #F30A0A;
+}
+.fit{
+margin-top: 25px;  
+}
+.style{
+  border-radius: 6px;
+  background-color: white;
+  padding: 10px;
+  width:28%;
+  text-align: center; 
+  border:1px solid black;
+  background-color:#3b3c36 ;
+}
+
+.c1{
+  color: #F30A0A;
+  margin-bottom: 40px;
+}
+
+.style1{
+  width: 100%;
+  padding: 7px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: none;
+  
+}
+
+input[type=text]:focus{
+  border-color:#F30A0A ;
+  box-shadow: 0 0 8px 0 #F30A0A;
+}
+
+input[type=password]:focus{
+  border-color:#F30A0A ;
+  box-shadow: 0 0 8px 0 #F30A0A;
+}
+.style2{
+  width: 100%;
+  background-color:#262626;
+  color: white;
+  padding: 12px ;
+  margin: 8px 0 ;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.style2:hover {
+  background-color: #0d0d0d;
+  
+
+}
+
+.style3{
+	text-align:center;
+	border:1px solid black;
+	width:26%;
+	padding:15px 20px;
+    border-radius:6px;
+    background-color:  #3b3c36;
+	color:white;
+	
+}
+
+.i1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    background-color:#3b3c36 ;
+    border-radius: 6px;
+}
+
+.logLogo{
+  margin-left: 15px;
+  margin-top: 8px;
+  color: #F30A0A;
+}
+small{
+  color: #F30A0A;  
+}

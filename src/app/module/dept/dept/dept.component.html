@@ -1,0 +1,17 @@
+<div>
+<h1 align="center">Department List</h1>
+<div >
+<table id="customers">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Status</th>
+    </tr>
+    <tr *ngFor="let dept of list">
+      <td>{{dept.id}}</td>
+      <td>{{dept.name}}</td>
+      <td>{{dept.status}}</td>
+    </tr>
+</table>
+</div>
+</div>
