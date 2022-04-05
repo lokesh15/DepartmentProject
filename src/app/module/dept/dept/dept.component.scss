@@ -33,3 +33,29 @@ h1{
   margin-top: 40px;
   margin-bottom: 5%;
 }
+
+.pagination {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 45%;
+
+}
+
+.pagination button {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination button.active {
+  color: black;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+// .pagination button:hover:not(.active) {
+//   background-color: #FABEB0;
+//   border-radius: 5px;
+// }

@@ -37,8 +37,8 @@
 							<td colspan="2">
 								<input type="password" class="style1" [(ngModel)]="password" formControlName="password">
 								<small *ngIf="logIn.get('password').invalid && logIn.get('password').touched">Enter valid Password </small> 
-								<small *ngIf="logIn.get('password').errors && logIn.get('password').errors.required">Password is required</small> 
-								<small *ngIf="logIn.get('password').errors && logIn.get('password').errors.pattern">Enter valid Password with maximum value of 8</small> 
+								<small *ngIf="logIn.get('password').errors && logIn.get('password').errors.required ">Password is required</small> 
+								<small *ngIf="logIn.get('password').errors && logIn.get('password').errors.pattern ">Enter valid Password with maximum value of 8</small> 
 							</td>
 						</tr>
 						<tr>

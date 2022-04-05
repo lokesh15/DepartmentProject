@@ -12,6 +12,9 @@
       <td>{{dept.name}}</td>
       <td>{{dept.status}}</td>
     </tr>
-</table>
+</table>    
 </div>
+</div>
+<div class="pagination">
+  <button *ngFor="let page of pageArray; let i=index" (click)="departmentList(i+1)" class="active" >{{i+1}}</button>
 </div>

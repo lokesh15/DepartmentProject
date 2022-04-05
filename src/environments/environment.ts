@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
 
-  url: 'http://3.108.34.27:5000/test/'
+  url: 'http://3.108.34.27:5000/test/',
+  // velSeTok: 'hA:3P+y<\(YN(tJt',
 
 };
 

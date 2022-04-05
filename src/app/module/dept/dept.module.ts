@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DeptComponent } from './dept/dept.component';
 import { DeptRoutingModule } from './dept-routing.module';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { DeptRoutingModule } from './dept-routing.module';
     ReactiveFormsModule,
     //BrowserAnimationsModule,
     DeptRoutingModule,
+    MatPaginatorModule,
   ]
 })
 export class DeptModule { }

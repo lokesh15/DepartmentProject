@@ -36,8 +36,7 @@ export class UserLoginComponent implements OnInit {
       //console.log(res)
       this.services.jwt=res.token;
       //console.log('token',this.services.jwt)
-      this.router.navigateByUrl("dept")
-      
+      this.router.navigateByUrl("dept")      
     },error =>{
       console.log(error);
       alert("Log-in Failed");
